@@ -11,7 +11,7 @@ body {
 
 form {
   max-width: 300px;
-  margin: 10px auto;
+  margin: 0 auto;
   padding: 10px 20px;
   background: #f4f7f8;
   border-radius: 8px;
@@ -22,10 +22,10 @@ h1 {
   text-align: center;
 }
 
-.container {
+/* .container {
     display: flex;
     flex-direction: column;
-}
+} */
 
 .main-title,
 .title,
@@ -35,14 +35,8 @@ h1 {
 
 input[type="text"],
 input[type="password"],
-input[type="date"],
-input[type="datetime"],
 input[type="email"],
-input[type="number"],
-input[type="search"],
 input[type="tel"],
-input[type="time"],
-input[type="url"],
 textarea,
 select {
   background: rgba(255,255,255,0.1);
@@ -59,8 +53,33 @@ select {
   margin-bottom: 30px;
 }
 
+
 input[placeholder*="Required"] {
     text-align: right;
+}
+
+.main-header {
+  text-align: center;
+}
+
+.form-inline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-inline label {
+  margin: 5px 10px 5px 0;
+}
+
+.form-inline input,
+.form-inline select,
+.form-inline textarea {
+  vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  background-color: #FFF;
+  border: 1px solid #ddd;
 }
 
 input[type="radio"],
