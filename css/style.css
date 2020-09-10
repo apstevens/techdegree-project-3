@@ -14,7 +14,7 @@ body {
 form {
   /* margin: 0 auto; */
   padding: 10px 20px;
-  /* background: #f4f7f8; */
+  background: #f4f7f8;
   border-radius: 8px;
 }
 
@@ -50,8 +50,7 @@ input[type="text"],
 input[type="password"],
 input[type="email"],
 input[type="tel"],
-textarea,
-select {
+textarea {
   background: rgba(255,255,255,0.1);
   border: none;
   font-size: 16px;
@@ -64,6 +63,10 @@ select {
   color: #8a97a0;
   box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
   margin-bottom: 30px;
+}
+
+select {
+  width: 85%;
 }
 
 input::placeholder {
@@ -81,15 +84,39 @@ input::placeholder {
   margin-right: 10px;
 }
 
+.newsletter-info .col {
+    flex-direction: row;
+    align-items: center;
+  }
+
 .btn {
+  padding: 5px;
+  color: #FFF;
+  background-color: #4bc970;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 80%;
+  margin: 0 auto;
+  border: 1px solid #3ac162;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+  margin-bottom: 10px;
   margin-top: 25px;
   padding-top: 10px;
   color: white;
-  width: 380px;
+}
+
+fieldset.contact-info,
+fieldset.newsletter-info {
+  border: 0;
+  width: 80%;
+  margin: 0 auto;
 }
 
 fieldset.contact-info {
-  margin-bottom: 25px;
+    margin-bottom: 25px;
 }
 
 .form-inline {
@@ -113,13 +140,11 @@ fieldset.contact-info {
   border-radius: 5px;
 }
 
+
+
 .col {
   display: flex;
   flex-direction: column;
-}
-
-caption.format {
-  /* margin: 25px; */
 }
 
 input[type="radio"]:checked + label,
@@ -155,29 +180,13 @@ select.arrows:focus {
   outline: 0;
 }
 
-button {
-
-  padding: 5px;
-  color: #FFF;
-  background-color: #4bc970;
-  font-size: 18px;
-  text-align: center;
-  font-style: normal;
-  border-radius: 5px;
-  width: 100%;
-  border: 1px solid #3ac162;
-  border-width: 1px 1px 3px;
-  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
-  margin-bottom: 10px;
-}
-
-
 legend {
   font-size: 1.4em;
   margin-bottom: 10px;
 }
 
 label {
+  /* width: 15%; */
   display: block;
   margin-bottom: 8px;
 }
@@ -195,6 +204,10 @@ label.light {
 
 @media (min-width: 768px) {
 
+  label {
+    width: 15%;
+  }
+
   fieldset {
     margin-bottom: 30px;
   }
@@ -202,11 +215,6 @@ label.light {
   .wrapper {
     width: 80%;
     margin: 0 auto;
-  }
-
-  .newsletter-info .col {
-    flex-direction: row;
-    align-items: center;
   }
 
   .contact-info .col {
