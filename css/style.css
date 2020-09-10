@@ -12,9 +12,9 @@ body {
 
 
 form {
-  margin: 0 auto;
+  /* margin: 0 auto; */
   padding: 10px 20px;
-  background: #f4f7f8;
+  /* background: #f4f7f8; */
   border-radius: 8px;
 }
 
@@ -42,7 +42,7 @@ hr.second-line {
   background: black;
 }
 
-h3.secondary-title {
+legend.secondary-title {
   align-self: flex-start;
 }
 
@@ -66,7 +66,6 @@ select {
   margin-bottom: 30px;
 }
 
-
 input::placeholder {
     text-align: right;
 }
@@ -83,10 +82,14 @@ input::placeholder {
 }
 
 .btn {
-  margin-top: 10px;
+  margin-top: 25px;
   padding-top: 10px;
   color: white;
   width: 380px;
+}
+
+fieldset.contact-info {
+  margin-bottom: 25px;
 }
 
 .form-inline {
@@ -99,14 +102,10 @@ input::placeholder {
   margin: 5px 10px 5px 0;
 }
 
-fieldset {
-  border: 0;
-}
 
 .form-inline input,
 .form-inline select,
 .form-inline textarea {
-  /* vertical-align: middle; */
   margin: 5px 10px 5px 0;
   padding: 10px;
   background-color: #FFF;
@@ -116,8 +115,18 @@ fieldset {
 
 .col {
   display: flex;
-  flex-direction: row;
-  align-items: center ;
+  flex-direction: column;
+}
+
+caption.format {
+  /* margin: 25px; */
+}
+
+input[type="radio"]:checked + label,
+input[type="checkbox"]:checked + label {
+  font-size: 1em;
+  font-weight: bold;
+  color: blue;
 }
 
 input[type="radio"],
@@ -132,7 +141,6 @@ select {
 }
 
 select.arrows {
-
   -moz-appearance: none;
   -webkit-appearance: none;
   background-image: url('../images/angle-double-down-solid.svg');
@@ -175,6 +183,7 @@ label {
 }
 
 label.light {
+  font-size: .75em;
   font-weight: 300;
   display: inline;
 }
@@ -187,7 +196,6 @@ label.light {
 @media (min-width: 768px) {
 
   fieldset {
-    border: 0;
     margin-bottom: 30px;
   }
 
@@ -196,16 +204,17 @@ label.light {
     margin: 0 auto;
   }
 
+  .newsletter-info .col {
+    flex-direction: row;
+    align-items: center;
+  }
+
   .contact-info .col {
     flex-direction: row;
+    align-items: center;
   }
   .contact-info input {
     flex-grow: 1;
-    flex-basis: 75%;
-  }
-  .contact-info label {
     flex-basis: 25%;
-    height:50px;
-    margin: auto 0;
   }
 }

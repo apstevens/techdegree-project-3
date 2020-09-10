@@ -18,7 +18,7 @@
             </section>
             <form class="form-inline" action="index.html" method="POST">
                 <fieldset class="contact-info">
-                    <h3 class="secondary-title">Contact Information</h3>
+                    <legend class="secondary-title">Contact Information</legend>
                     <div class="col">
                         <label class="item1 light" for="name">Full Name</label>
                         <input class="item full_name" type="text" id="name" name="user_name" placeholder="Required" required>
@@ -36,11 +36,11 @@
                         <input class="item user_street" type="text" id="address" name="user_address">
                     </div>
                     <div class="col">
-                        <label for="city">City</label>
+                        <label class="item1 light" for="city">City</label>
                         <input class="item user_city" type="text" id="city" name="user_city">
                     </div>
                     <div class="col">
-                        <label for="county">County</label>
+                        <label class="item1 light" for="county">County</label>
                         <select class="item user_county arrows" id="county" name="user_county">
                             <optgroup label="Counties light">
                                 <option value="none"></option>
@@ -95,10 +95,9 @@
                         </select>
                     </div>
                 </fieldset>
-        
-                <fieldset>
-                    <legend>Newsletter</legend>
-                    <p>Select the newsletters you would like to receive</p>
+                <fieldset class="newsletter-info">
+                    <legend class="secondary-title">Newsletter</legend>
+                    <caption class="newsletter-text">Select the newsletters you would like to receive</caption>
                     <div class="col">
                         <input  type="checkbox" id="html"><label class="light" for="html">HTML News</label>
                     </div>
@@ -106,16 +105,16 @@
                         <input  type="checkbox" id="css"><label class="light" for="css">CSS News</label>
                     </div>
                     <div class="col">
-                        <input  type="checkbox" id="javascript"><label for="javascript">JavaScript News</label>
+                        <input  type="checkbox" id="javascript"><label class="light" for="javascript">JavaScript News</label>
                     </div>
-                    <caption>Newletter format</caption>
+                    <caption class="format">Newletter format</caption>
                     <div class="col">
                         <input  type="radio" id="html_format"><label class="light" for="html-format">HTML</label>
                     </div>
                     <div class="col">
                         <input  type="radio" id="plain-text"><label class="light" for="plain-text">Plain text</label>
                     </div>
-                    <caption>Other topics you'd like to hear about</caption>
+                    <caption class="newsletter-text">Other topics you'd like to hear about</caption>
                     <div class="col">
                         <textarea class="item" id="comment" name="user_comment"></textarea>
                     </div>
