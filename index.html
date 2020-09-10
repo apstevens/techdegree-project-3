@@ -10,8 +10,8 @@
     </head>
     <body>
         <section class="wrapper">
+            <h1 class="main-title">The Code Review</h1>
             <section class="main-header">
-                <h1 class="main-title">The Code Review</h1>
                     <h3 class="title">Signup for our newsletter</h3>
                     <p class="initial-paragraph">Get the latest news on how your code is doing right in your inbox</p>
                     <hr class="first-line">
@@ -54,7 +54,7 @@
 
                             <optgroup label="Counties">
 
-                                <option value="none"></option>
+                                <option disabled selected value> -- select an option -- </option>
 
                                 <option value="bedfordshire">Bedfordshire</option>
 
@@ -104,7 +104,7 @@
 
                                 <option value="lincolnshire">Lincolnshire</option>
 
-                                <option value=london"">London</option>
+                                <option value="london">London</option>
 
                                 <option value="manchester">Manchester</option>
 
@@ -163,7 +163,7 @@
 
                     <legend class="secondary-title">Newsletter</legend>
 
-                    <caption class="newsletter-text">Select the newsletters you would like to receive</caption>
+                    <h4>Select the newsletters you would like to receive</h4>
 
                     <div class="col">
                         <input  type="checkbox" id="html"><label class="light" for="html">HTML News</label>
@@ -175,16 +175,16 @@
                         <input  type="checkbox" id="javascript"><label class="light" for="javascript">JavaScript News</label>
                     </div>
 
-                    <caption class="format">Newletter format</caption>
+                    <h4 class="format">Newsletter format</h4>
 
                     <div class="col">
-                        <input  type="radio" id="html_format"><label class="light" for="html-format">HTML</label>
+                        <input  type="radio" id="html-format"><label class="light" for="html-format">HTML</label>
                     </div>
                     <div class="col">
                         <input  type="radio" id="plain-text"><label class="light" for="plain-text">Plain text</label>
                     </div>
 
-                    <caption class="newsletter-text">Other topics you'd like to hear about</caption>
+                    <h4 class="newsletter-text">Other topics you'd like to hear about</h4>
 
                     <div class="col">
                         <textarea class="item" id="comment" name="user_comment"></textarea>
