@@ -69,6 +69,11 @@ select {
   width: 85%;
 }
 
+label.post {
+  width: 70%;
+}
+
+
 input::placeholder {
     text-align: right;
 }
@@ -139,8 +144,6 @@ fieldset.contact-info {
   border: 1px solid #ddd;
   border-radius: 5px;
 }
-
-
 
 .col {
   display: flex;
