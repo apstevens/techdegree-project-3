@@ -14,6 +14,7 @@ body {
 form {
   /* margin: 0 auto; */
   padding: 10px 20px;
+  height: auto;
   background: #f4f7f8;
   border-radius: 8px;
 }
@@ -50,27 +51,41 @@ input[type="text"],
 input[type="password"],
 input[type="email"],
 input[type="tel"],
-textarea {
+textarea,
+select {
   background: rgba(255,255,255,0.1);
   border: none;
-  font-size: 16px;
+  font-size: 12px;
   height: auto;
-  margin: 0;
   outline: 0;
-  padding: 15px;
+  padding: 25px;
   width: 100%;
   background-color: #e8eeef;
   color: #8a97a0;
   box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
-  margin-bottom: 30px;
 }
 
-select {
-  width: 85%;
+.form-inline input,
+.form-inline select,
+.form-inline textarea {
+  margin: 5px 10px 5px 0;
+  height: auto;
+  padding: 5px;
+  background-color: #FFF;
+  border: 1px solid #ddd;
+  border-radius: 5px;
 }
 
-label.post {
-  width: 70%;
+option {
+  font-size: 12px;
+}
+
+/* select {
+  width: 82%;
+} */
+
+input.user_postcode {
+  max-width: 35%;
 }
 
 
@@ -134,17 +149,6 @@ fieldset.contact-info {
   margin: 5px 10px 5px 0;
 }
 
-
-.form-inline input,
-.form-inline select,
-.form-inline textarea {
-  margin: 5px 10px 5px 0;
-  padding: 10px;
-  background-color: #FFF;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-}
-
 .col {
   display: flex;
   flex-direction: column;
@@ -166,6 +170,10 @@ select {
   padding: 6px;
   height: 32px;
   border-radius: 2px;
+}
+
+option:first-of-type {
+  display: none;
 }
 
 select.arrows {
@@ -208,7 +216,11 @@ label.light {
 @media (min-width: 768px) {
 
   label {
-    width: 15%;
+    flex-basis: 20%;
+  }
+
+  input.user_postcode {
+    max-width: 25%;
   }
 
   fieldset {
@@ -224,8 +236,10 @@ label.light {
     flex-direction: row;
     align-items: center;
   }
-  .contact-info input {
+
+  .contact-info input,
+  .contact-info select {
     flex-grow: 1;
-    flex-basis: 25%;
+    flex-basis: 75%;
   }
 }
