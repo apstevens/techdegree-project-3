@@ -13,87 +13,112 @@
                 <h1 class="main-title">The Code Review</h1>
                     <h3 class="title">Signup for our newsletter</h3>
                     <p class="initial-paragraph">Get the latest news on how your code is doing right in your inbox</p>
-                    <hr>
-                    <h3 class="title">Contact Information</h3>
+                    <hr class="first-line">
+                    <hr class="second-line">
             </section>
             <form class="form-inline" action="index.html" method="POST">
-                <fieldset class="row">
-                    <label class="item1 light" for="name">Full Name</label>
-                    <input class="item full_name" type="text" id="name" name="user_name" placeholder="Required" required>
-                    <label class="item1 light" for="email">Email Address</label>
-                    <input class="item user-email" type="email" id="email" name="user_email" placeholder="Required" required>
-                    <label class="item1 light" for="phone">Phone Number</label>
-                    <input class="item user_phone" type="tel" id="phone" name="user_phone_number">
-                    <label class="item1 light" for="address">Street Address</label>
-                    <input class="item user_street" type="text" id="address" name="user_address">
-                    <label for="city light">City</label>
-                    <input class="item user_city" type="text" id="city" name="user_city">
-                    <label for="county light">County</label>
-                    <select class="item user_county" id="county" name="user_county">
-                        <optgroup label="Counties light">
-                            <option value="none"></option>
-                            <option value="bedfordshire">Bedfordshire</option>
-                            <option value="berkshire">Berkshire</option>
-                            <option value="bristol">Bristol</option>
-                            <option value="buckinghamshire">Buckinghamshire</option>
-                            <option value="cambridgeshire">Cambridgeshire</option>
-                            <option value="cheshire">Cheshire</option>
-                            <option value="cornwall">Cornwall</option>
-                            <option value="county-durham">County Durham</option>
-                            <option value="cumbria">Cumbria</option>
-                            <option value="derbyshire">Derbyshire</option>
-                            <option value="devon">Devon</option>
-                            <option value="dorset">Dorset</option>
-                            <option value="east-riding-of-yorkshire">East Riding Of Yorkshire</option>
-                            <option value="east-sussex">East Sussex</option>
-                            <option value="essex">Essex</option>
-                            <option value="gloucestershire">Gloucestershire</option>
-                            <option value="hampshire">Hampshire</option>
-                            <option value="herefordshire">Herefordshire</option>
-                            <option value="hertfordshire">Hertfordshire</option>
-                            <option value="isle-of-wight">Isle of Wight</option>
-                            <option value="kent">Kent</option>
-                            <option value="lancashire">Lancashire</option>
-                            <option value="leicestershire">Leicestershire</option>
-                            <option value="lincolnshire">Lincolnshire</option>
-                            <option value=london"">London</option>
-                            <option value="manchester">Manchester</option>
-                            <option value="merseyside">Merseyside</option>
-                            <option value="norfolk">Norfolk</option>
-                            <option value="north-yorkshire">North Yorkshire</option>
-                            <option value="northamptonshire">Northhamptonshire</option>
-                            <option value="northumberland">Northumberland</option>
-                            <option value="nottinghamshire">Nottinghamshire</option>
-                            <option value="oxfordshire">Oxfordshire</option>
-                            <option value="rutland">Rutland</option>
-                            <option value="shropshire">Shropshire</option>
-                            <option value="somerset">Somerset</option>
-                            <option value="south-yorkshire">South Yorkshire</option>
-                            <option value="staffordshire">Staffordshire</option>
-                            <option value="suffolk">Suffolk</option>
-                            <option value="surrey">Surrey</option>
-                            <option value="tyne-and-wear">Tyne and Wear</option>
-                            <option value="warwickshire">Warwickshire</option>
-                            <option value="west-midlands">West Midlands</option>
-                            <option value="west-sussex">West Sussex</option>
-                            <option value="west-yorkshire">West Yorkshire</option>
-                            <option value="wiltshire">Wiltshire</option>
-                            <option value="worcestershire">Worcestershire</option>
-                        </optgroup>
-                    </select>
+                <fieldset class="contact-info">
+                    <h3 class="secondary-title">Contact Information</h3>
+                    <div class="col">
+                        <label class="item1 light" for="name">Full Name</label>
+                        <input class="item full_name" type="text" id="name" name="user_name" placeholder="Required" required>
+                    </div>
+                    <div class="col">
+                        <label class="item1 light" for="email">Email Address</label>
+                        <input class="item user-email" type="email" id="email" name="user_email" placeholder="Required" required>
+                    </div>
+                    <div class="col">
+                        <label class="item1 light" for="phone">Phone Number</label>
+                        <input class="item user_phone" type="tel" id="phone" name="user_phone_number">
+                    </div>
+                    <div class="col">
+                        <label class="item1 light" for="address">Street Address</label>
+                        <input class="item user_street" type="text" id="address" name="user_address">
+                    </div>
+                    <div class="col">
+                        <label for="city">City</label>
+                        <input class="item user_city" type="text" id="city" name="user_city">
+                    </div>
+                    <div class="col">
+                        <label for="county">County</label>
+                        <select class="item user_county arrows" id="county" name="user_county">
+                            <optgroup label="Counties light">
+                                <option value="none"></option>
+                                <option value="bedfordshire">Bedfordshire</option>
+                                <option value="berkshire">Berkshire</option>
+                                <option value="bristol">Bristol</option>
+                                <option value="buckinghamshire">Buckinghamshire</option>
+                                <option value="cambridgeshire">Cambridgeshire</option>
+                                <option value="cheshire">Cheshire</option>
+                                <option value="cornwall">Cornwall</option>
+                                <option value="county-durham">County Durham</option>
+                                <option value="cumbria">Cumbria</option>
+                                <option value="derbyshire">Derbyshire</option>
+                                <option value="devon">Devon</option>
+                                <option value="dorset">Dorset</option>
+                                <option value="east-riding-of-yorkshire">East Riding Of Yorkshire</option>
+                                <option value="east-sussex">East Sussex</option>
+                                <option value="essex">Essex</option>
+                                <option value="gloucestershire">Gloucestershire</option>
+                                <option value="hampshire">Hampshire</option>
+                                <option value="herefordshire">Herefordshire</option>
+                                <option value="hertfordshire">Hertfordshire</option>
+                                <option value="isle-of-wight">Isle of Wight</option>
+                                <option value="kent">Kent</option>
+                                <option value="lancashire">Lancashire</option>
+                                <option value="leicestershire">Leicestershire</option>
+                                <option value="lincolnshire">Lincolnshire</option>
+                                <option value=london"">London</option>
+                                <option value="manchester">Manchester</option>
+                                <option value="merseyside">Merseyside</option>
+                                <option value="norfolk">Norfolk</option>
+                                <option value="north-yorkshire">North Yorkshire</option>
+                                <option value="northamptonshire">Northhamptonshire</option>
+                                <option value="northumberland">Northumberland</option>
+                                <option value="nottinghamshire">Nottinghamshire</option>
+                                <option value="oxfordshire">Oxfordshire</option>
+                                <option value="rutland">Rutland</option>
+                                <option value="shropshire">Shropshire</option>
+                                <option value="somerset">Somerset</option>
+                                <option value="south-yorkshire">South Yorkshire</option>
+                                <option value="staffordshire">Staffordshire</option>
+                                <option value="suffolk">Suffolk</option>
+                                <option value="surrey">Surrey</option>
+                                <option value="tyne-and-wear">Tyne and Wear</option>
+                                <option value="warwickshire">Warwickshire</option>
+                                <option value="west-midlands">West Midlands</option>
+                                <option value="west-sussex">West Sussex</option>
+                                <option value="west-yorkshire">West Yorkshire</option>
+                                <option value="wiltshire">Wiltshire</option>
+                                <option value="worcestershire">Worcestershire</option>
+                            </optgroup>
+                        </select>
+                    </div>
                 </fieldset>
         
                 <fieldset>
                     <legend>Newsletter</legend>
                     <p>Select the newsletters you would like to receive</p>
-                    <input  type="checkbox" id="html"><label class="light" for="html">HTML News</label>
-                    <input  type="checkbox" id="css"><label class="light" for="css">CSS News</label>
-                    <input  type="checkbox" id="javascript"><label for="javascript">JavaScript News</label>
+                    <div class="col">
+                        <input  type="checkbox" id="html"><label class="light" for="html">HTML News</label>
+                    </div>
+                    <div class="col">
+                        <input  type="checkbox" id="css"><label class="light" for="css">CSS News</label>
+                    </div>
+                    <div class="col">
+                        <input  type="checkbox" id="javascript"><label for="javascript">JavaScript News</label>
+                    </div>
                     <caption>Newletter format</caption>
-                    <input  type="radio" id="html_format"><label class="light" for="html-format">HTML</label>
-                    <input  type="radio" id="plain-text"><label class="light" for="plain-text">Plain text</label>
+                    <div class="col">
+                        <input  type="radio" id="html_format"><label class="light" for="html-format">HTML</label>
+                    </div>
+                    <div class="col">
+                        <input  type="radio" id="plain-text"><label class="light" for="plain-text">Plain text</label>
+                    </div>
                     <caption>Other topics you'd like to hear about</caption>
-                    <textarea class="item" id="comment" name="user_comment"></textarea>
+                    <div class="col">
+                        <textarea class="item" id="comment" name="user_comment"></textarea>
+                    </div>
                 </fieldset>
                 <button class="btn" type="submit">Sign Up</button>
             </form>

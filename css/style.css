@@ -5,12 +5,13 @@
 }
 
 body {
+  margin: 0 auto;
   font-family: 'Gayathri', sans-serif;
-  color: #384047;
+  font-weight: 200;
 }
 
+
 form {
-  max-width: 300px;
   margin: 0 auto;
   padding: 10px 20px;
   background: #f4f7f8;
@@ -19,18 +20,30 @@ form {
 
 h1 {
   margin: 0 0 30px 0;
+  padding-top: 10px;
   text-align: center;
+  color: white;
+  background: rgb(36, 35, 35);
 }
 
-/* .container {
-    display: flex;
-    flex-direction: column;
-} */
-
-.main-title,
-.title,
 .initial-paragraph {
-    align-self: center;
+  color: rgb(151, 148, 148);
+}
+
+hr.first-line {
+  padding: 3px;
+  border: 1px solid black;
+  background: black;
+}
+
+hr.second-line {
+  padding: 2px;
+  border: 1px solid black;
+  background: black;
+}
+
+h3.secondary-title {
+  align-self: flex-start;
 }
 
 input[type="text"],
@@ -54,12 +67,25 @@ select {
 }
 
 
-input[placeholder*="Required"] {
+input::placeholder {
     text-align: right;
 }
 
 .main-header {
   text-align: center;
+}
+
+.main-header,
+.first-line,
+.second-line {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.btn {
+  margin-top: 10px;
+  padding-top: 10px;
+  color: white;
 }
 
 .form-inline {
@@ -72,14 +98,25 @@ input[placeholder*="Required"] {
   margin: 5px 10px 5px 0;
 }
 
+fieldset {
+  border: 0;
+}
+
 .form-inline input,
 .form-inline select,
 .form-inline textarea {
-  vertical-align: middle;
+  /* vertical-align: middle; */
   margin: 5px 10px 5px 0;
   padding: 10px;
   background-color: #FFF;
   border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.col {
+  display: flex;
+  flex-direction: row;
+  align-items: center ;
 }
 
 input[type="radio"],
@@ -93,8 +130,25 @@ select {
   border-radius: 2px;
 }
 
+select.arrows {
+
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background-image: url('../images/angle-double-down-solid.svg');
+  background-position: calc(100% - .5rem), 100% 0;
+  background-size: .5em .5em;
+  background-repeat: no-repeat;
+}
+
+input:focus,
+select.arrows:focus {
+  border-color: blue;
+  outline: 0;
+}
+
 button {
-  padding: 19px 39px 18px 39px;
+
+  padding: 5px;
   color: #FFF;
   background-color: #4bc970;
   font-size: 18px;
@@ -108,10 +162,6 @@ button {
   margin-bottom: 10px;
 }
 
-fieldset {
-  margin-bottom: 30px;
-  border: none;
-}
 
 legend {
   font-size: 1.4em;
@@ -128,10 +178,33 @@ label.light {
   display: inline;
 }
 
-@media screen and (min-width: 769px) {
+.main-footer {
+  text-align: center;
+  padding: 10px;
+}
 
-  form {
-    max-width: 480px;
+@media (min-width: 768px) {
+
+  fieldset {
+    border: 0;
+    margin-bottom: 30px;
   }
 
+  .wrapper {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .contact-info .col {
+    flex-direction: row;
+  }
+  .contact-info input {
+    flex-grow: 1;
+    flex-basis: 75%;
+  }
+  .contact-info label {
+    flex-basis: 25%;
+    height:50px;
+    margin: auto 0;
+  }
 }
