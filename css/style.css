@@ -160,6 +160,7 @@ input[type="checkbox"]:checked + label {
   font-size: 1em;
   font-weight: bold;
   color: blue;
+  transition: 1.5s;
 }
 
 input[type="radio"],
@@ -183,9 +184,11 @@ select.arrows {
 }
 
 input:focus,
+textarea:focus,
 select.arrows:focus {
   border-color: blue;
   outline: 0;
+  transition: 1.5s;
 }
 
 legend {
