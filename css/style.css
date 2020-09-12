@@ -132,7 +132,8 @@ input::placeholder {
 fieldset.contact-info,
 fieldset.newsletter-info {
   border: 0;
-  width: 80%;
+  width: 99%;
+  max-width: 768px;
   margin: 0 auto;
 }
 
